@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./preview.css">
+    <title>会议主席台 · 公开体验</title>
+</head>
+<body>
+    <header>
+        <h1>会议主席台</h1>
+        <p>公开体验 · 虚构席位 · 浏览器独立存档</p>
+    </header>
+    <main id="desk">
+        <section id="experience">
+            <h2>选择彩排方式</h2>
+            <p>线下练习点名、发言和表决。线上练习举牌、公布名单和等待发言。</p>
+            <div class="actions">
+                <button type="button" id="begin-inperson" disabled>开始线下彩排</button>
+                <button type="button" id="begin-online" disabled>开始线上彩排</button>
+            </div>
+            <p id="launch-status" role="status">正在加载体验。若提示持续，请检查网络后刷新。</p>
+        </section>
+        <noscript>请启用 JavaScript 后重新打开体验页。</noscript>
+    </main>
+    <script src="./preview.js" defer onerror="document.getElementById('launch-status').textContent='体验脚本加载失败，请重新打开完整的 HTTPS 网址。'"></script>
+</body>
+</html>
